@@ -1,0 +1,33 @@
+menu "PDW Gui"
+
+  config PDW_GUI_TASK_STACK_SIZE
+    int "Stack size for GUI tasks"
+    default 16000 
+
+  config PDW_LCD_CLK_PIN_NUM
+    int "LCD spi CLK pin"
+    default 19
+
+  config PDW_LCD_MOSI_PIN_NUM
+    int "LCD spi MOSI pin"
+    default 23
+
+  config PDW_LCD_CS_PIN_NUM
+    int "LCD CS pin"
+    default 22
+
+  config PDW_LCD_DC_PIN_NUM
+    int "LCD Data/Cmd pin"
+    default 21
+
+  config PDW_LCD_PIXEL_CLK_FREQ
+    int "LCD pixel clock frequency in Hz"
+    default 10000000
+
+  config PDW_LCD_H_RES
+    int "LCD horizontal resolution"
+    default 240
+    help
+      "Set both height and width of the round LCD"
+
+endmenu

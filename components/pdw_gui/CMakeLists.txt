@@ -1,0 +1,12 @@
+idf_component_register(
+  SRCS
+    "pdw_gui.c"
+  INCLUDE_DIRS
+    "include"
+  REQUIRES
+    "pdw_utils"
+  PRIV_REQUIRES
+    "driver"
+    "esp_lcd_gc9a01"
+    "esp_lvgl_port"
+)
